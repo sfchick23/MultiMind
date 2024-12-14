@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Images</title>
+</head>
+<body>
+<h1>Сгенерированные изображения</h1>
+<div>
+    <ul>
+        <li th:each="image : ${images}">
+            <img th:src="${image}" alt="Generated Image">
+        </li>
+    </ul>
+</div>
+<a href="/">Вернуться назад</a>
+</body>
+</html>
